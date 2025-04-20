@@ -1,5 +1,5 @@
 import streamlit as st
-st.set_page_config("ISOM3400 Web App Dev 1 Lab Manual", page_icon="🖥️")
+st.set_page_config("ISOM3400 Web App Dev 1 Lab Manual", page_icon="🖥️", layout="wide")
 
 pages = {
     "🧪Lab Instructions": [
