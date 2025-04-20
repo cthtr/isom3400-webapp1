@@ -74,4 +74,19 @@ st.markdown("""
             Inform the student whether they are likely to pass the course or not!
 """)
 
+'---'
+st.header("Example output")
+st.write("You do not need to implement the grades dataframe as shown in the pass/fail screenshots below. It is only for demonstrative purposes.")
+img1, img2, img3 = st.columns(3, border=True)
+with img1:
+    st.subheader("When the app first loads:")
+    st.image("img/default.png")
+
+with img2:
+    st.subheader("Output for a passing grade:")
+    st.image("img/pass.png")
+    
+with img3:
+    st.subheader("Output for a failing grade:")
+    st.image("img/fail.png")
 
