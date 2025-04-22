@@ -21,7 +21,7 @@ st.subheader("Before you start:")
 st.markdown("""
 - Software: VS Code and Anaconda are installed properly (Lab 1)
 - Python interpreter & environment: Streamlit is installed (likely comes with Anaconda's 'base')
-- Importing Streamlit: Streamlit is imported as st **(`import streamlit as st`)**
+- Importing Streamlit: Streamlit is imported as st (import streamlit as st)
 """)
 
 st.subheader("To complete this lab:")
