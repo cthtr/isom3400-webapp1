@@ -32,9 +32,10 @@ st.markdown("""
 
             You should ask the user for four different values:
             1. Number of labs attended (max: 12)
-            2. Assignment 1 score (out of 100)
-            3. Assignment 2 score (out of 100)
-            4. Final exam score (out of 100)
+            2. In-class exercises (total; out of 50)
+            3. Assignment score (out of 100)
+            4. Midterm exam score (out of 100)
+            5. Final exam score (out of 100)
 
             Once the user has filled in all relevant values, they should click on a form submit button (`st.form_submit_button()`) to submit the entered values.
 """)
@@ -48,18 +49,19 @@ st.markdown("""
 """)
 st.markdown("You are given a dictionary `grading`:")
 st.code("""
-        grading = {
-        'Labs': 5,
-        'Assignment 1': 15,
-        'Assignment 2': 15,
-        'Final Exam': 65
-        }
+    grading = {
+        "Labs": 5,
+        "In-class Exercises": 10,
+        "Assignment": 15,
+        "Midterm Exam": 20,
+        "Final Exam": 50
+    }
 """, "python")
 st.markdown("""
-            The keys are names of the four assessment components, and the values are the corresponding weightings of the components (/100).\n
+            The keys are names of the five assessment components, and the values are the corresponding weightings of the components (/100).\n
             For lab attendance:
-            - Each attended lab is worth 10% of the lab grade.
-            - If a student has attended at least 10 labs, they will have full credit for the lab component.
+            - Each attended lab is worth 1/6 of the lab grade. (For simplicity sake, we will not consider the mandatory lab :P)
+            - If a student has attended at least 6 labs, they will have full credit for the lab component.
             - There is no bonus for students who have attended all labs. (Sorry!)
 
             Sum up the weighted scores to calculate the total course score.
